@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title> Vlog de Adrián </title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/style.css">
+		
+	</head>
+	
+	<style>
+
+		html {
+
+			font-size: 16px;
+
+			}
+
+		body {
+
+			background-color: #ffccd5; 
+			color: #ff99ff; 
+			font-family: "Caveat", cursive; 
+			font-size: 2rem;
+
+			}
+
+		h1 {
+
+			color: #509999; 
+			font-family: papyrus, fantasy; 
+			text-transform: capitalize; 
+			text-align: center; 
+			text-shadow: 4px 4px 4px pink; 
+			font-size: 3.35rem; 
+
+			}
+
+		h2 {
+
+			color: #00b3b3; 
+			font-family: copperplate, fantasy; 
+			font-size: 2.75rem
+
+			}
+
+		#indice { 
+
+			color: #3399ff; 
+			list-style-type: none; 
+			font-family: "Courier New", Monospace; 
+			font-weight: bold; 
+			font-style: italic; 
+			text-align: center; 
+			font-size: 1.5rem;
+
+			}
+
+		ul { 
+
+			color: #ff75ff;
+			list-style-type: none;
+
+			}
+
+		h3 { 
+
+			color: #2fd0d0; 
+			font-family: papyrus, fantasy; 
+			font-size: 2rem
+
+			}
+
+		ol { 
+
+			color: #ff75ff;
+
+			}
+
+		.par { 
+
+			color: #00ffbb;
+
+			}
+
+		.impar { 
+
+			color: #00ffff;
+
+			}
+
+		img {
+
+			max-width:100%;
+
+			}
+
+		.img_introduccion  {
+
+			max-width:100%;
+
+			}
+
+		.img_portada {
+
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+
+			}
+
+		#menu { 
+			
+			border: 2px solid #00bfcf;
+			color: #3399ff;
+			background-color: #f7bac3; 
+			padding: 10px;
+			margin: 20px;
+			margin-left: 100 px;
+			margin-right: 100 px;
+			display: flex;
+			flex-direction: row;
+			
+			}
+		
+		#menu li {
+			
+			padding: 0px;
+			margin: 5px;
+			margin-left: 50px;
+			text-align: center; 
+			list-style-type: none;
+			flex: 0 auto;
+			
+			}
+		
+		#menu li a {
+			
+			color: #ffffff;
+			display: block;
+			
+			}
+		
+		#menu li a:hover {
+
+			background-color: #f6d5da; 
+			color: #000000;
+
+			}
+
+		#menu li:hover .submenu {
+
+			border-top: 3px solid #00bfcf;
+			background-color: #f7bac3;
+			position: absolute;
+			padding-left: 0px;
+			padding-right: 50px;
+			display: block;
+
+			}
+
+		#menu li .submenu {
+
+			display: none;
+
+			}
+
+		#contenedor {
+
+			border-top: 50px solid #ffffe3;
+			width: 85%;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #ffffe3;
+			padding: 20px; 
+			min-width: 500px;  
+			text-align: center;
+
+			}
+
+		#titulo {
+
+
+			}
+
+		#introduccion {
+
+
+			}
+
+		#argumento {
+
+			display: flex;
+			flex-direction: row;
+
+			}
+
+		.columna-principal{
+
+			order: 1;
+			flex: 2;
+			border: 10px solid #ffffe3;
+
+			}
+
+		.columna-lateral {
+
+			order: 2;
+			flex: 1;
+			text-align: center;
+			background-color: #fad1d7;
+
+			}
+
+		#final {
+
+			padding: 50px;
+			background-color: #fad1d7;
+			margin-top: 20px;
+			}
+		
+		
+		.primer-articulo {
+
+			border: 0px solid #000;
+			display: flex;
+			flex-direction: row;
+			background-color: #fad1d7;	
+			
+			}
+			
+		.primer-articulo .img.1 {
+			
+			order: 1;
+			flex: 0;
+			border: 1px solid #000;
+			width: 500 px;
+			
+			}
+		
+		.primer-articulo .art.1 {
+			
+			border: 1px solid #000;
+			order: 2;
+			flex: 1;
+			
+			}	
+			
+		.segundo-articulo {
+
+			border: 0px solid #000;
+			display: flex;
+			flex-direction: row;
+			background-color: #fad1d7;
+			margin-top: 20px;
+			
+			}
+		
+		.segundo-articulo .img.2 {
+			
+			order: 1;
+			
+			border: 1px solid #000;
+			max-width: 200 px;
+			
+			}
+		
+		.segundo-articulo .art.2 {
+			
+			border: 1px solid #000;
+			order: 2;
+			
+			
+			}
+			
+		a { 
+
+			color: inherit; 
+			text-decoration: none;
+
+			}
+
+	</style>
+	
+	<body> 
+		
+		<div id="contenedor">
+
+			<header id="titulo">
+
+				<h1> <a href="./index.html">  Evolución del Cine <br> </a>  </h1>
+
+			</header>
+
+			<nav id="introduccion">
+
+				<ul id="menu">
+
+					<li>  <a href="#"> Inicio </a> 
+
+						<ul class="submenu">
+
+							<li> <a href="#"> Fotografias de Santorio </a> </li>
+
+							<li> <a href="#"> Seleccion de Xenxo </a> </li>
+
+						</ul>
+
+					</li>
+
+					<li>  <a href="#"> Sobre Mi </a> 
+
+						<ul class="submenu">
+
+							<li> <a href="#"> Vlog Personal </a> </li>
+
+						</ul>
+
+					</li>
+					
+					<li>  <a href="#"> Contacto </a> 
+
+						<ul class="submenu">
+
+							<li> <a href="#"> Telefono </a> </li>
+
+							<li> <a href="#"> Correo </a> </li>
+
+						</ul>
+
+					</li>
+					
+					<li>  <a href="#"> Portfolio </a> 
+
+						<ul class="submenu">
+
+							<li> <a href="#"> Fotografias de Santorio </a> </li>
+
+							<li> <a href="#"> Seleccion de Xenxo </a> </li>
+
+						</ul>
+
+					</li>
+
+				</ul>
+
+			</nav>
+		
+			<main id="argumento">
+				
+				<div class="columna-lateral">
+
+					<ul id="centro">
+
+						<li> 
+							
+							<div class="primer-articulo">
+						
+							<div class="img.1" > 
+							
+							<h3> Primera Etapa </h3> 
+							
+							<img  src="https://humanidades.com/wp-content/uploads/2019/05/cine-1-e1588549681662.jpg" width="1600" height="300" >
+							
+							
+							
+							</div>
+					
+							</div> 
+							
+						</li>
+
+						<li> 
+						
+						<div class="segundo-articulo">
+						
+						<div class="img.2" > 
+							
+							<h3> Segunda Etapa </h3>
+						
+							<img src="https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/1404521236813915052.jpg" width="953" height="300" > </div>
+						
+						<div class="art.2" > 
+							
+							
+							
+						</div>
+					
+					</div> 
+					
+					</li>
+
+					</ul>
+				
+				</div>
+				
+				<div class="columna-principal">
+
+					<h2> Presentación </h2>
+
+					<div class="img_portada"> <img src="https://e00-telva.uecdn.es/assets/multimedia/imagenes/2020/06/25/15930774133054.jpg"> </div>
+
+					<p> Bienvenidos a mi blog, en este se hablara del cine, centrandose en su evolución e inicios </p>
+
+					<h1 id="./Primer_Articulo.html"> </h1>
+
+					<h1> Artículos </h1>
+					
+					<div class="primer-articulo">
+						
+						<div class="img.1" > <img  src="https://humanidades.com/wp-content/uploads/2019/05/cine-1-e1588549681662.jpg" width="1600" height="300" > </div>
+						
+						<div class="art.1" > 
+							
+							<h3> Primera Etapa </h3> 
+						
+							<p> Este articulo trata sobre los inicios del cine, desde el 1895 hasta el 1976, destacan figuras importantes como: Auguste y Louis Lumière o George Méliès. </p>
+							
+						</div>
+					
+					</div>
+					
+					<div class="segundo-articulo">
+						
+						<div class="img.2" > <img src="https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/1404521236813915052.jpg" width="953" height="300" > </div>
+						
+						<div class="art.2" > 
+							
+							<h3> Segunda Etapa </h3> 
+						
+							<p> Este segundo articulo trata sobre la revolución del blockbuster, destacan personas y peliculas como: Steven Spilberg, George Lucas, Rocky o Superman. </p>
+							
+						</div>
+					
+					</div>
+
+		</div>
+		
+	</body>
+
+</html>
+
